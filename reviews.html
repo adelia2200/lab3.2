@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отзывы — Ресторан «Семья»</title>
+
+<style>
+body {
+    font-family:'Segoe UI', sans-serif;
+    background:#fff6f8;
+    color:#5a4a4d;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:#ffe3ec;
+    position:sticky;
+    top:0;
+}
+
+.logo {
+    font-size:28px;
+    color:#b76e79;
+    font-weight:bold;
+}
+
+nav a {
+    margin-left:20px;
+    text-decoration:none;
+    color:#5a4a4d;
+}
+
+.section {
+    padding:80px 60px;
+}
+
+h1 {
+    text-align:center;
+    color:#b76e79;
+    margin-bottom:30px;
+}
+
+.reviews {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.review-card {
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.07);
+}
+
+.review-text {
+    font-style:italic;
+    margin-bottom:10px;
+}
+
+.review-author {
+    text-align:right;
+    font-weight:bold;
+    color:#d36c8a;
+}
+
+.text-block {
+    max-width:900px;
+    margin:0 auto 40px;
+    text-align:center;
+}
+
+footer {
+    background:#ffe3ec;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:900px){
+    .reviews{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Семья</div>
+<nav>
+<a href="index.html">Главная</a>
+<a href="menu.html">Меню</a>
+<a href="reviews.html">Отзывы</a>
+</nav>
+</header>
+
+<section class="section">
+<h1>Отзывы наших гостей</h1>
+
+<div class="text-block">
+<p>
+Мы ценим мнение каждого гостя, ведь именно благодаря вашим отзывам мы становимся лучше.
+Ресторан «Семья» стремится создать атмосферу уюта, где каждый чувствует себя как дома.
+Нам важно, чтобы еда, обслуживание и атмосфера оставляли только приятные впечатления.
+</p>
+<br>
+<p>
+Каждый отзыв мы внимательно читаем и учитываем при улучшении меню и сервиса.
+Спасибо, что делитесь своими эмоциями — это помогает нам расти и развиваться.
+</p>
+</div>
+
+<div class="reviews">
+
+<div class="review-card">
+<p class="review-text">
+«Очень уютное место! Атмосфера спокойная и приятная, как дома. Борщ просто великолепный!»
+</p>
+<p class="review-author">— Анна К.</p>
+</div>
+
+<div class="review-card">
+<p class="review-text">
+«Отмечали день рождения — всё прошло идеально. Персонал очень внимательный.»
+</p>
+<p class="review-author">— Дмитрий С.</p>
+</div>
+
+<div class="review-card">
+<p class="review-text">
+«Потрясающие десерты! Особенно понравился торт "Нежность".»
+</p>
+<p class="review-author">— Мария Л.</p>
+</div>
+
+<div class="review-card">
+<p class="review-text">
+«Очень приятный интерьер, спокойная музыка и вкусная еда.»
+</p>
+<p class="review-author">— Игорь П.</p>
+</div>
+
+<div class="review-card">
+<p class="review-text">
+«Лучшее место для семейного ужина. Обязательно вернёмся ещё.»
+</p>
+<p class="review-author">— Елена В.</p>
+</div>
+
+<div class="review-card">
+<p class="review-text">
+«Всё на высшем уровне: подача, вкус и атмосфера.»
+</p>
+<p class="review-author">— Артём К.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Ресторан «Семья»
+</footer>
+
+</body>
+</html>

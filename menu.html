@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Меню — Ресторан «Семья»</title>
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family:'Segoe UI', sans-serif;
+    background:#fff6f8;
+    color:#5a4a4d;
+    line-height:1.6;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#ffe3ec;
+    position:sticky;
+    top:0;
+}
+
+.logo {
+    font-size:28px;
+    font-weight:bold;
+    color:#b76e79;
+}
+
+nav a {
+    margin-left:20px;
+    text-decoration:none;
+    color:#5a4a4d;
+}
+
+.section {
+    padding:80px 60px;
+}
+
+h1,h2 {
+    text-align:center;
+    color:#b76e79;
+    margin-bottom:20px;
+}
+
+.menu-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.menu-card {
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.07);
+}
+
+.menu-card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.menu-card-content {
+    padding:15px;
+    text-align:center;
+}
+
+.price {
+    color:#d36c8a;
+    font-weight:bold;
+    margin-top:8px;
+}
+
+.text-block {
+    max-width:900px;
+    margin:0 auto 40px;
+    text-align:center;
+}
+
+footer {
+    background:#ffe3ec;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:900px){
+    .menu-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Семья</div>
+<nav>
+<a href="index.html">Главная</a>
+<a href="menu.html">Меню</a>
+<a href="reviews.html">Отзывы</a>
+</nav>
+</header>
+
+<section class="section">
+<h1>Наше меню</h1>
+
+<div class="text-block">
+<p>
+В ресторане «Семья» мы уделяем особое внимание качеству продуктов и традиционным рецептам.
+Каждое блюдо готовится только после заказа, чтобы сохранить свежесть и насыщенный вкус.
+Мы используем фермерские овощи, охлаждённое мясо и натуральные специи.
+</p>
+<br>
+<p>
+Наше меню вдохновлено домашней кухней разных регионов. Здесь вы найдёте как классические блюда,
+так и авторские интерпретации привычных вкусов. Мы стараемся, чтобы каждый гость нашёл что-то своё —
+будь то лёгкий суп, сытное горячее блюдо или изысканный десерт.
+</p>
+</div>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<img src="images/photo1.jpg">
+<div class="menu-card-content">
+<h3>Борщ домашний</h3>
+<p>Классический украинский борщ со сметаной и зеленью</p>
+<p class="price">350 ₽</p>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/photo2.jpg">
+<div class="menu-card-content">
+<h3>Куриный крем-суп</h3>
+<p>Нежный суп на сливках с курицей и гренками</p>
+<p class="price">320 ₽</p>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/photo3.jpg">
+<div class="menu-card-content">
+<h3>Паста с лососем</h3>
+<p>Спагетти с соусом на основе сливок и слабосолёного лосося</p>
+<p class="price">690 ₽</p>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/photo4.jpg">
+<div class="menu-card-content">
+<h3>Стейк из говядины</h3>
+<p>Сочный стейк прожарки medium с овощами гриль</p>
+<p class="price">1200 ₽</p>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/photo5.jpg">
+<div class="menu-card-content">
+<h3>Пицца «Семейная»</h3>
+<p>Домашняя пицца с сыром, ветчиной и томатами</p>
+<p class="price">890 ₽</p>
+</div>
+</div>
+
+<div class="menu-card">
+<img src="images/photo6.jpg">
+<div class="menu-card-content">
+<h3>Десерт «Нежность»</h3>
+<p>Воздушный мусс с ягодами и белым шоколадом</p>
+<p class="price">420 ₽</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Ресторан «Семья»
+</footer>
+
+</body>
+</html>
